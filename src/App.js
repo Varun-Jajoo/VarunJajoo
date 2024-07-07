@@ -90,7 +90,7 @@ function App() {
                 className="inline-flex items-center justify-center px-6 py-3 text-base font-bold leading-7 text-white transition-all duration-200 bg-gray-900 border border-transparent rounded hover:bg-gray-600 font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                 role="button"
               >
-                Try for free
+                Achievements
               </a>
             </div>
           </div>
@@ -110,7 +110,7 @@ function App() {
                   className="inline-flex items-center justify-center px-6 py-3 text-base font-bold leading-7 text-white transition-all duration-200 bg-gray-900 border border-transparent rounded hover:bg-gray-600 font-pj focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
                   role="button"
                 >
-                  Try for free
+                  Achievements
                 </a>
               </div>
             </div>
@@ -129,7 +129,7 @@ function App() {
               <h1 className="text-4xl font-bold leading-tight text-gray-900 sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj">Let's Build Something Amazing Together</h1>
               <p className="mt-2 text-lg text-gray-600 sm:mt-6 font-inter">Hey there, I'm Varun Jajoo, a web developer who loves diving into hackathons to push my limits and innovate. </p>
               <a href="#" title="" className="inline-flex px-8 py-4 mt-8 text-lg font-bold text-white transition-all duration-200 bg-gray-900 border border-transparent rounded sm:mt-10 font-pj hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" role="button">
-                Try our free editor
+                Achievements
               </a>
 
               <div className="mt-8 sm:mt-16">
