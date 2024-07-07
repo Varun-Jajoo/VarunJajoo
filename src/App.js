@@ -135,9 +135,9 @@ function App() {
               <div className="mt-8 sm:mt-16">
                
 
-                <blockquote className="mt-6">
+                {/* <blockquote className="mt-6">
                   <p className="text-lg font-bold text-gray-900 font-pj">Best code editor in market!</p>
-                 </blockquote>
+                 </blockquote> */}
 
                
               </div>
