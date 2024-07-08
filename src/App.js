@@ -2,6 +2,7 @@
 import './App.css';
 import { BentoGrid, BentoGridItem } from './Grid';
 import GridPattern from './GridPattern';
+import SparklesText from './SparkleText';
 // import { StickyScroll } from './RevealScroll';
 import { ContainerScroll } from './ScrollContainer';
 import { VelocityScroll } from './Velocity';
@@ -12,7 +13,7 @@ import IconCloud from './IconCloud';
 function App() {
   let expanded = false;
   const Skeleton = () => (
-    <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]  border border-gray-900 bg-black"></div>
+    <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl bg-dot-black/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]  border border-gray-900 bg-[#141414]"></div>
   );
   const iconSlugs = ["react", "typescript", "javascript"];
   const items = [
@@ -20,7 +21,7 @@ function App() {
       title: "The Dawn of Innovation",
       description: "Explore the birth of groundbreaking ideas and inventions.",
       header: <Skeleton />,
-      className: "md:col-span-2 bg-black border-gray-900",
+      className: "md:col-span-2 bg-[#141414] border-gray-900",
       icon: "",
     },
     {
@@ -48,7 +49,7 @@ function App() {
   ];
   
   return (
-    <div className="bg-black">
+    <div className="bg-[#141414]">
        <GridPattern className="absolute inset-0 h-[135rem]  md:h-[125rem] lg:h-[130em] " numSquares={20} x={0} y={0}/>
       <header className="relative z-10 py-4 md:py-6  bg-opacity-50 backdrop-blur " x-data="{expanded: false}">
         <div className="container px-4 mx-auto sm:px-6 lg:px-8">
@@ -76,11 +77,11 @@ function App() {
             </div>
 
             <div className="hidden md:flex md:items-center md:justify-center md:space-x-10 md:absolute md:inset-y-0 md:left-1/2 md:-translate-x-1/2 lg:space-x-16">
-              <a href="#" title="" className="text-base font-medium text-white transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Features </a>
+              <a href="#" title="" className="text-base font-medium text-white transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Achievements </a>
 
-              <a href="#" title="" className="text-base font-medium text-white transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Pricing </a>
+              <a href="#" title="" className="text-base font-medium text-white transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Work Experience </a>
 
-              <a href="#" title="" className="text-base font-medium text-white transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Support </a>
+              <a href="#" title="" className="text-base font-medium text-white transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Resume </a>
             </div>
 
             <div className="hidden md:flex">
@@ -154,10 +155,10 @@ function App() {
       </section>
       <ContainerScroll className="" titleComponent={<h1 className='text-5xl md:text-7xl font-bold font-pj md:mb-0 mb-[-3rem] text-white '>Power BI Dashboard</h1>} children={<img className='rounded-xl' src={image1}/>}/>
       {/* <StickyScroll className="h-[120vh] " content={content}/> */}
-      <div className='bg-black relative   md:mt-[30vh] mt-[-7rem] z-10'>
-      <div className="py-5 w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
+      <div className='bg-[#141414] relative   md:mt-[30vh] mt-[-7rem] z-10'>
+      <div className="py-5 w-full bg-[#141414] flex flex-col items-center justify-center overflow-hidden rounded-md">
       <h1 className="md:text-5xl pb-5 text-3xl lg:text-7xl font-bold text-center text-white relative z-20">
-        PROJECTS
+        <SparklesText text ="PROJECTS"/>
       </h1>
       <div className="w-[40rem] h-40 relative">
         {/* Gradients */}
@@ -177,7 +178,7 @@ function App() {
         />
  
         {/* Radial Gradient to prevent sharp edges */}
-        <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
+        <div className="absolute inset-0 w-full h-full bg-[#141414] [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
       </div>
     </div>
      <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem] mt-[-5rem] md:px-0 px-5 relative z-10 text-white">
@@ -187,7 +188,7 @@ function App() {
           title={item.title}
           description={item.description}
           header={item.header}
-          className={`${item.className} bg-black border border-gray-900 text-white`}
+          className={`${item.className} bg-[#141414] border border-gray-900 text-white`}
           icon={item.icon}
           
         />

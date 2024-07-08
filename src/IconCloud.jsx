@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { useTheme } from "next-themes";
 import {
   Cloud,
   fetchSimpleIcons,
@@ -31,14 +30,18 @@ export const cloudProps = {
     outlineColour: "#f3f2ef",
     maxSpeed: 0.025,
     minSpeed: 0.02,
-    // dragControl: false,
   },
 };
 
-export const renderCustomIcon = (icon, theme) => {
-  const bgHex = theme === "light" ? "#f3f2ef" : "#080510";
-  const fallbackHex = theme === "light" ? "#6e6e73" : "#ffffff";
-  const minContrastRatio = theme === "dark" ? 2 : 1.2;
+export const renderCustomIcon = (icon) => {
+  const customColors = {
+    nextdotjs: "#ffffff",
+    threedotjs: "#ffffff",
+  };
+
+  const bgHex = customColors[icon.slug] || "#f3f2ef"; // Default background color
+  const fallbackHex = customColors[icon.slug] || "#6e6e73"; // Default fallback color
+  const minContrastRatio = 1.2; // Minimum contrast ratio
 
   return renderSimpleIcon({
     icon,
@@ -57,7 +60,6 @@ export const renderCustomIcon = (icon, theme) => {
 
 export default function IconCloud({ iconSlugs }) {
   const [data, setData] = useState(null);
-  const { theme } = useTheme();
 
   useEffect(() => {
     fetchSimpleIcons({ slugs: iconSlugs }).then(setData);
@@ -67,9 +69,9 @@ export default function IconCloud({ iconSlugs }) {
     if (!data) return null;
 
     return Object.values(data.simpleIcons).map((icon) =>
-      renderCustomIcon(icon, theme || "light"),
+      renderCustomIcon(icon)
     );
-  }, [data, theme]);
+  }, [data]);
 
   return (
     // @ts-ignore
