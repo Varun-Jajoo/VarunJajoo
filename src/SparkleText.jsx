@@ -16,10 +16,10 @@ const SparklesText = ({
 
   useEffect(() => {
     const generateStar = () => {
-      const starX = `${Math.random() * 100}%`;
+      const starX = `${Math.random() *100}%`;
       const starY = `${Math.random() * 100}%`;
       const color = Math.random() > 0.5 ? colors.first : colors.second;
-      const delay = Math.random() * 2;
+      const delay = Math.random() * 4;
       const scale = Math.random() * 1 + 0.3;
       const lifespan = Math.random() * 10 + 5;
       const id = `${starX}-${starY}-${Date.now()}`;
@@ -51,7 +51,7 @@ const SparklesText = ({
 
   return (
     <div
-      className={cn("text-6xl font-bold", className)}
+      className={cn("md:text-6xl text-4xl  font-bold", className)}
       {...props}
       style={{
         "--sparkles-first-color": `${colors.first}`,
@@ -72,7 +72,7 @@ const Sparkle = ({ id, x, y, color, delay, scale }) => {
   return (
     <motion.svg
       key={id}
-      className="pointer-events-none absolute z-20"
+      className="pointer-events-none absolute z-20 md:w-[21px] md:h-[21px] w-[15px] h-[15px] fill-current"
       initial={{ opacity: 0, left: x, top: y }}
       animate={{
         opacity: [0, 1, 0],
@@ -80,8 +80,8 @@ const Sparkle = ({ id, x, y, color, delay, scale }) => {
         rotate: [75, 120, 150],
       }}
       transition={{ duration: 0.8, repeat: Infinity, delay }}
-      width="21"
-      height="21"
+      width=""
+      height=""
       viewBox="0 0 21 21"
     >
       <path
