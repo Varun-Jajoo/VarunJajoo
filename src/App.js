@@ -48,7 +48,7 @@ function App() {
   ];
   
   return (
-    <div className="bg-gray-50">
+    <div className="bg-black">
        <GridPattern className="absolute inset-0 h-[135rem]  md:h-[125rem] lg:h-[130em] " numSquares={20} x={0} y={0}/>
       <header className="relative z-10 py-4 md:py-6  bg-opacity-50 backdrop-blur " x-data="{expanded: false}">
         <div className="container px-4 mx-auto sm:px-6 lg:px-8">
@@ -76,11 +76,11 @@ function App() {
             </div>
 
             <div className="hidden md:flex md:items-center md:justify-center md:space-x-10 md:absolute md:inset-y-0 md:left-1/2 md:-translate-x-1/2 lg:space-x-16">
-              <a href="#" title="" className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Features </a>
+              <a href="#" title="" className="text-base font-medium text-white transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Features </a>
 
-              <a href="#" title="" className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Pricing </a>
+              <a href="#" title="" className="text-base font-medium text-white transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Pricing </a>
 
-              <a href="#" title="" className="text-base font-medium text-gray-900 transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Support </a>
+              <a href="#" title="" className="text-base font-medium text-white transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Support </a>
             </div>
 
             <div className="hidden md:flex">
@@ -98,11 +98,11 @@ function App() {
           <nav style={{ display: expanded ? 'block' : 'none' }}>
             <div className="px-1 py-8">
               <div className="grid gap-y-7">
-                <a href="#" title="" className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded hover:bg-gray-50 focus:outline-none font-pj focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Features </a>
+                <a href="#" title="" className="flex items-center p-3 -m-3 text-base font-medium text-white transition-all duration-200 rounded hover:bg-gray-50 focus:outline-none font-pj focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Features </a>
 
-                <a href="#" title="" className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded hover:bg-gray-50 focus:outline-none font-pj focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Pricing </a>
+                <a href="#" title="" className="flex items-center p-3 -m-3 text-base font-medium text-white transition-all duration-200 rounded hover:bg-gray-50 focus:outline-none font-pj focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Pricing </a>
 
-                <a href="#" title="" className="flex items-center p-3 -m-3 text-base font-medium text-gray-900 transition-all duration-200 rounded hover:bg-gray-50 focus:outline-none font-pj focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Support </a>
+                <a href="#" title="" className="flex items-center p-3 -m-3 text-base font-medium text-white transition-all duration-200 rounded hover:bg-gray-50 focus:outline-none font-pj focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Support </a>
 
                 <a
                   href="#"
@@ -126,8 +126,8 @@ function App() {
         <div className="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-y-4 lg:items-center lg:grid-cols-2 xl:grid-cols-2">
             <div className="text-center xl:col-span-1 lg:text-left md:px-16 lg:px-0 xl:pr-20">
-              <h1 className="text-4xl font-bold leading-tight text-gray-900 sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj">Let's Build Something Amazing Together</h1>
-              <p className="mt-2 text-lg text-gray-600 sm:mt-6 font-inter">Hey there, I'm Varun Jajoo, a web developer who loves diving into hackathons to push my limits and innovate. </p>
+              <h1 className="text-4xl font-bold leading-tight text-white sm:text-5xl sm:leading-tight lg:text-6xl lg:leading-tight font-pj">Let's Build Something Amazing Together</h1>
+              <p className="mt-2 text-lg text-gray-200 sm:mt-6 font-inter">Hey there, I'm Varun Jajoo, a web developer who loves diving into hackathons to push my limits and innovate. </p>
               <a href="#" title="" className="inline-flex px-8 py-4 mt-8 text-lg font-bold text-white transition-all duration-200 bg-gray-900 border border-transparent rounded sm:mt-10 font-pj hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" role="button">
                 Achievements
               </a>
@@ -136,7 +136,7 @@ function App() {
                
 
                 {/* <blockquote className="mt-6">
-                  <p className="text-lg font-bold text-gray-900 font-pj">Best code editor in market!</p>
+                  <p className="text-lg font-bold text-white font-pj">Best code editor in market!</p>
                  </blockquote> */}
 
                
@@ -152,7 +152,7 @@ function App() {
           </div>
         </div>
       </section>
-      <ContainerScroll className="" titleComponent={<h1 className='text-5xl md:text-7xl font-bold font-pj md:mb-0 mb-[-3rem] '>Power BI Dashboard</h1>} children={<img className='rounded-xl' src={image1}/>}/>
+      <ContainerScroll className="" titleComponent={<h1 className='text-5xl md:text-7xl font-bold font-pj md:mb-0 mb-[-3rem] text-white '>Power BI Dashboard</h1>} children={<img className='rounded-xl' src={image1}/>}/>
       {/* <StickyScroll className="h-[120vh] " content={content}/> */}
       <div className='bg-black relative   md:mt-[30vh] mt-[-7rem] z-10'>
       <div className="py-5 w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">

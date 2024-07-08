@@ -10,7 +10,7 @@ function GridPattern({
   strokeDasharray = 0,
   numSquares = 30,
   className,
-  maxOpacity = 0.1,
+  maxOpacity = 0.4,
   duration = 4,
   repeatDelay = 0.5,
   ...props
@@ -79,7 +79,7 @@ function GridPattern({
       ref={containerRef}
       aria-hidden="true"
       className={cn(
-        "pointer-events-none absolute inset-0 h-full w-full fill-gray-400/30 stroke-gray-400/30 border-white",
+        "pointer-events-none absolute inset-0 h-full w-full fill-gray-200/30 stroke-gray-100/30 border-white",
         className
       )}
       width="100%"
@@ -120,7 +120,7 @@ function GridPattern({
             height={height - 1}
             x={x * width + 1}
             y={y * height + 1}
-            fill="currentColor"
+            fill="white"
             strokeWidth="0"
           />
         ))}
